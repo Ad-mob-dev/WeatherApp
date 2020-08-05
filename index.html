@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Powered By Adeel khan</title>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/bd1857d446.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+<body>
+
+<div id="main"></div>
+<!-- The overlay /mobile drawer -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="head  bg-light text-black">
+        <img class= "img-fluid" src="./logomain.png" alt="logo" width="35px" height="35px">
+        <h2 class="mheading" style="font-size: 22px;">Weather Forecast App</h2>
+    </div>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="" class="active"><i class="fas fa-map-marker-alt"></i>Current Forecast</a> 
+      <a href="#"><i class="fas fa-search"></i>Search By City</a> 
+  </div>
+  <div class="footer">
+    <div class="footer-credit"> <strong>Powered By : Adeel Khan</strong></div>
+</div>
+</div>
+  
+  <!-- open/show the overlay navigation menu -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <span><img class= "img-fluid" src="./logomain.png" alt="logo" width="35px" height="35px"> &nbsp; </span>
+        <a href="" class="navbar-brand mr-auto mainH">Weather Forecast App</a>
+
+        <button type="button" id="sidebarCollapse" class="btn btn-info" onclick="openNav(this)"><i
+                class="fas fa-align-left"></i></button>
+
+
+
+    </nav> 
+ 
+
+        <!-- card for Forecast -->
+            <div class="col-md-12 col-sm-12 col-lg-12 pb-lg-5 pt-lg-5 mb-lg-5 hide" id="cd">
+
+
+                <div id="content" class="card  bg-dark"
+                    style="border-radius: 30px; border: 5px solid whitesmoke; background: url('./cbg.jpg'); background-position: center center; background-size: cover;">
+
+
+
+                    <center class="mb-3">
+                        <p class="text-center  badge badge-light mt-3 p-2"><i
+                                class="fas fa-map-marker-alt"></i>&nbsp;<span id="title"> </span></p>
+                        <p class="text-center badge badge-light p-2"><i class="fas fa-clock"></i>&nbsp;<span
+                                id="date"></span>
+                        </p>
+                    </center>
+
+                    <center id="c1" class="d-block text-center mb-2">
+                        <img id="ico" class="img-fluid" src="" alt="sample" width="60px" height="100px"
+                            style="border-radius: 30px; background-color: rgba(215, 20, 161, 0.5); margin-bottom: 15px;">
+                            <br>
+                            <span id="temp" class="badge badge-light p-2"></span>
+                            <span id="ico-title" class="badge badge-light p-2"></span>
+                    </center>
+
+
+                    <center class="mb-2">
+
+                        <span id="flike" class="badge badge-light p-2"></span>
+                        <span id="visibility" class="badge badge-light p-2"></span>
+                    </center>
+
+
+                    <center class="mb-2">
+                        <span id="cloud" class="badge badge-light p-2"></span>
+                        <span id="humidity" class="badge badge-light p-2"></span>
+                        <span id="pressure" class="badge badge-light p-2"></span>
+                    </center>
+
+                    <center class="mb-2">
+                        <span id="wind_deg" class="badge badge-light p-2"></span>
+                        <span id="wind_speed" class="badge badge-light p-2"></span>
+                    </center>
+
+
+                    <center class="mb-2">
+
+                        <span id="sunrise" class="badge badge-light p-2"></span>
+                        <span id="sunset" class="badge badge-light p-2"></span>
+                    </center>
+
+                </div>
+
+             
+            <!-- footer main page -->
+            <div class="footerm">
+                <div class="footer-creditm"> <strong>Powered By : Adeel Khan</strong></div>
+            </div>
+
+                <!-- bootstrap cdn -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+            <!-- Search By Cities pending for next review -->
+            <!-- <div class="container card p-5 w-50" id="sbyc">
+                <h4 class="text-center p-1 mb-3">Check Weather By City</h4>
+                <input type="text" name="city" id="city" placeholder="Enter City Name" class="form-control m-auto p-2">
+                <button class="btn btn-outline-primary m-auto p-2" onclick="search()" id="sbtn">Check Forecast</button>
+            </div> -->

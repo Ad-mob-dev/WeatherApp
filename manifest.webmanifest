@@ -1,0 +1,51 @@
+{
+    "name": "Weather Forecast App",
+    "short_name": "WF APP",
+    "start_url": ".",
+    "display":"standalone",
+    "background_color" : "#fff",
+    "description" : "Weather Forecasting App",
+    "theme_color": "BLACK",
+    "scope": "./",
+    "icons":[
+        
+        {
+            "src" : "logo32.png",
+            "sizes" : "32x32",
+            "type" : "image/png"
+    
+        },
+        {
+            "src" : "logo64.png",
+            "sizes" : "64x64",
+            "type" : "image/png"
+    
+        },
+        {
+            "src" : "logo128.png",
+            "sizes" : "128x128",
+            "type" : "image/png"
+    
+        },
+        {
+            "src" : "logo256.png",
+            "sizes" : "256x256",
+            "type" : "image/png"
+    
+        },
+        {
+            "src" : "logomain.png",
+            "sizes" : "300x300",
+            "type" : "image/png"
+    
+        },
+        
+        {
+            "src" : "logo512.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+    
+        }
+    ],
+        "Orientation" : "potrait"
+    }
